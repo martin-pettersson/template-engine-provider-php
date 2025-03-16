@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5697778583644ee841afcd744537685f",
+    "content-hash": "e91ef65fb7175b115d4c962491f1b9e6",
     "packages": [
         {
             "name": "n7e/collection",
@@ -196,16 +196,16 @@
         },
         {
             "name": "n7e/service-provider",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/martin-pettersson/service-provider-php.git",
-                "reference": "424a544e06fc78c7548bd758e0821d29377f4770"
+                "reference": "0a9ae46d081322dc1f272a765c9f53f235fbc7eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/martin-pettersson/service-provider-php/zipball/424a544e06fc78c7548bd758e0821d29377f4770",
-                "reference": "424a544e06fc78c7548bd758e0821d29377f4770",
+                "url": "https://api.github.com/repos/martin-pettersson/service-provider-php/zipball/0a9ae46d081322dc1f272a765c9f53f235fbc7eb",
+                "reference": "0a9ae46d081322dc1f272a765c9f53f235fbc7eb",
                 "shasum": ""
             },
             "require": {
@@ -239,9 +239,9 @@
             "description": "A general purpose service provider abstraction.",
             "support": {
                 "issues": "https://github.com/martin-pettersson/service-provider-php/issues",
-                "source": "https://github.com/martin-pettersson/service-provider-php/tree/0.1.0"
+                "source": "https://github.com/martin-pettersson/service-provider-php/tree/0.2.0"
             },
-            "time": "2025-03-13T23:00:08+00:00"
+            "time": "2025-03-16T22:10:32+00:00"
         },
         {
             "name": "n7e/templating",
@@ -341,22 +341,22 @@
         },
         {
             "name": "n7e/templating-provider",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/martin-pettersson/templating-provider-php.git",
-                "reference": "5c3b3d370dd6f38345a91de653610dca55a2198b"
+                "reference": "e11aa035cfe154b2d4b9f4bcfc510b7bcdb6c103"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/martin-pettersson/templating-provider-php/zipball/5c3b3d370dd6f38345a91de653610dca55a2198b",
-                "reference": "5c3b3d370dd6f38345a91de653610dca55a2198b",
+                "url": "https://api.github.com/repos/martin-pettersson/templating-provider-php/zipball/e11aa035cfe154b2d4b9f4bcfc510b7bcdb6c103",
+                "reference": "e11aa035cfe154b2d4b9f4bcfc510b7bcdb6c103",
                 "shasum": ""
             },
             "require": {
                 "n7e/collection": "^0.1.0",
                 "n7e/configuration": "^0.2.2",
-                "n7e/service-provider": "^0.1.0",
+                "n7e/service-provider": "^0.2.0",
                 "n7e/templating": "^0.1.0",
                 "php": ">=8.3"
             },
@@ -387,9 +387,9 @@
             "description": "A templating service provider.",
             "support": {
                 "issues": "https://github.com/martin-pettersson/templating-provider-php/issues",
-                "source": "https://github.com/martin-pettersson/templating-provider-php/tree/0.1.0"
+                "source": "https://github.com/martin-pettersson/templating-provider-php/tree/0.2.0"
             },
-            "time": "2025-03-16T01:23:32+00:00"
+            "time": "2025-03-16T22:17:03+00:00"
         },
         {
             "name": "psr/container",
