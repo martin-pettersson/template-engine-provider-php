@@ -17,6 +17,7 @@ use N7e\DependencyInjection\ContainerInterface;
 use N7e\RootDirectoryAggregateInterface;
 use N7e\ServiceProviderInterface;
 use N7e\TemplateEngineProviderInterface;
+use N7e\TemplateEngineProviderRegistryInterface;
 use N7e\Templating\Php;
 use N7e\Templating\TemplateEngineInterface;
 use Override;
@@ -33,30 +34,28 @@ final class TemplateEngineProvider implements ServiceProviderInterface, Template
      */
     private string $rootDirectory;
 
-    #[Override]
-    public function configure(ContainerBuilderInterface $containerBuilder): void
-    {
-        $container = $containerBuilder->build();
-
-        /** @var \N7e\Collection\WritableCollectionInterface $templateEngineProviders */
-        $templateEngineProviders = $container->get('template-engine-providers');
-
-        $templateEngineProviders->add($this);
-
-        /** @var \N7e\RootDirectoryAggregateInterface $rootDirectoryAggregate */
-        $rootDirectoryAggregate = $container->get(RootDirectoryAggregateInterface::class);
-
-        $this->rootDirectory = $rootDirectoryAggregate->getRootDirectory();
-    }
-
     /**
      * {@inheritDoc}
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter
      */
     #[Override]
+    public function configure(ContainerBuilderInterface $containerBuilder): void
+    {
+    }
+
+    #[Override]
     public function load(ContainerInterface $container): void
     {
+        /** @var \N7e\TemplateEngineProviderRegistryInterface $templateEngineProviders */
+        $templateEngineProviders = $container->get(TemplateEngineProviderRegistryInterface::class);
+
+        $templateEngineProviders->register($this);
+
+        /** @var \N7e\RootDirectoryAggregateInterface $rootDirectoryAggregate */
+        $rootDirectoryAggregate = $container->get(RootDirectoryAggregateInterface::class);
+
+        $this->rootDirectory = $rootDirectoryAggregate->getRootDirectory();
     }
 
     #[Override]

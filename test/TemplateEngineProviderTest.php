@@ -11,11 +11,11 @@ declare(strict_types=1);
 
 namespace N7e\Templating\Php;
 
-use N7e\Collection\WritableCollectionInterface;
 use N7e\Configuration\ConfigurationInterface;
 use N7e\DependencyInjection\ContainerBuilderInterface;
 use N7e\DependencyInjection\ContainerInterface;
 use N7e\RootDirectoryAggregateInterface;
+use N7e\TemplateEngineProviderRegistryInterface;
 use PHPUnit\Framework\Attributes\Before;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
@@ -29,7 +29,7 @@ class TemplateEngineProviderTest extends TestCase
     private TemplateEngineProvider $provider;
     private MockObject $containerBuilderMock;
     private MockObject $containerMock;
-    private MockObject $collectionMock;
+    private MockObject $registryMock;
     private MockObject $rootDirectoryAggregateMock;
     private MockObject $configurationMock;
 
@@ -39,7 +39,7 @@ class TemplateEngineProviderTest extends TestCase
         $this->provider = new TemplateEngineProvider();
         $this->containerBuilderMock = $this->getMockBuilder(ContainerBuilderInterface::class)->getMock();
         $this->containerMock = $this->getMockBuilder(ContainerInterface::class)->getMock();
-        $this->collectionMock = $this->getMockBuilder(WritableCollectionInterface::class)->getMock();
+        $this->registryMock = $this->getMockBuilder(TemplateEngineProviderRegistryInterface::class)->getMock();
         $this->rootDirectoryAggregateMock = $this->getMockBuilder(RootDirectoryAggregateInterface::class)->getMock();
         $this->configurationMock = $this->getMockBuilder(ConfigurationInterface::class)->getMock();
 
@@ -48,7 +48,7 @@ class TemplateEngineProviderTest extends TestCase
             ->willReturn($this->containerMock);
         $this->containerMock
             ->method('get')
-            ->willReturnOnConsecutiveCalls($this->collectionMock, $this->rootDirectoryAggregateMock);
+            ->willReturnOnConsecutiveCalls($this->registryMock, $this->rootDirectoryAggregateMock);
         $this->rootDirectoryAggregateMock
             ->method('getRootDirectory')
             ->willReturn('/root/directory');

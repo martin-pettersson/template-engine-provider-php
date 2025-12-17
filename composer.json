@@ -32,11 +32,10 @@
     },
     "require": {
         "php": ">=8.3",
-        "n7e/collection": "^0.1.0",
         "n7e/configuration": "^0.4.0",
         "n7e/service-provider": "^0.2.0",
         "n7e/templating": "^0.1.0",
-        "n7e/templating-provider": "^0.3.0",
+        "n7e/templating-provider": "^0.4.1",
         "n7e/root-directory-aggregate": "^0.1.0",
         "n7e/templating-php": "^0.1.2"
     },

@@ -4,56 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d426d4e0ae9983243bffcbe748ea1a9",
+    "content-hash": "c8532457a32d1d3e9432e02683b44a86",
     "packages": [
-        {
-            "name": "n7e/collection",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/martin-pettersson/collection-php.git",
-                "reference": "8157d15a33f5c2cf3e1b85c81a4399a954d4a5ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/martin-pettersson/collection-php/zipball/8157d15a33f5c2cf3e1b85c81a4399a954d4a5ce",
-                "reference": "8157d15a33f5c2cf3e1b85c81a4399a954d4a5ce",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.3"
-            },
-            "require-dev": {
-                "nunomaduro/phpinsights": "^v2.12.0",
-                "pdepend/pdepend": "^2.16.2",
-                "phpmd/phpmd": "^2.15.0",
-                "phpstan/phpstan": "^2.1.2",
-                "phpunit/phpunit": "^11.5.6",
-                "squizlabs/php_codesniffer": "^3.11.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "N7e\\Collection\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Martin Pettersson",
-                    "email": "martin@n7e.se"
-                }
-            ],
-            "description": "A convenient collection abstraction.",
-            "support": {
-                "issues": "https://github.com/martin-pettersson/collection-php/issues",
-                "source": "https://github.com/martin-pettersson/collection-php/tree/0.1.0"
-            },
-            "time": "2025-03-14T09:54:18+00:00"
-        },
         {
             "name": "n7e/configuration",
             "version": "0.4.0",
@@ -341,20 +293,19 @@
         },
         {
             "name": "n7e/templating-provider",
-            "version": "0.3.0",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/martin-pettersson/templating-provider-php.git",
-                "reference": "15fa1d94d70d623801d4c37fadb5864d8e3432aa"
+                "reference": "5cb8fcfa1e989ad5c709264b31bb9af52cc6177c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/martin-pettersson/templating-provider-php/zipball/15fa1d94d70d623801d4c37fadb5864d8e3432aa",
-                "reference": "15fa1d94d70d623801d4c37fadb5864d8e3432aa",
+                "url": "https://api.github.com/repos/martin-pettersson/templating-provider-php/zipball/5cb8fcfa1e989ad5c709264b31bb9af52cc6177c",
+                "reference": "5cb8fcfa1e989ad5c709264b31bb9af52cc6177c",
                 "shasum": ""
             },
             "require": {
-                "n7e/collection": "^0.1.0",
                 "n7e/configuration": "^0.4.0",
                 "n7e/service-provider": "^0.2.0",
                 "n7e/templating": "^0.1.0",
@@ -387,9 +338,9 @@
             "description": "A templating service provider.",
             "support": {
                 "issues": "https://github.com/martin-pettersson/templating-provider-php/issues",
-                "source": "https://github.com/martin-pettersson/templating-provider-php/tree/0.3.0"
+                "source": "https://github.com/martin-pettersson/templating-provider-php/tree/0.4.1"
             },
-            "time": "2025-12-17T07:42:43+00:00"
+            "time": "2025-12-17T09:18:44+00:00"
         },
         {
             "name": "psr/container",
